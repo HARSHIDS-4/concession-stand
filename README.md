@@ -37,6 +37,14 @@ You’ll be greeted with a welcome message and the menu. From there, just type i
 
 ---
 
-📸 Sample Output
+📄 License
+This project is open source and available under the MIT License.
+You're free to use, modify, and share it — just give credit. 😊
 
-📸 Sample Output
+---
+
+🙋‍♀️ Why I Made This
+I built this as one of my first Python mini-projects to get more confident with core concepts. If you're just starting out, feel free to fork this repo, play around with it, and make it your own!
+
+Happy coding!
+— Harshi Gupta ✨
