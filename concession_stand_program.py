@@ -6,7 +6,7 @@ menu={ "Popcorn":300 ,
         "Pizza":500 ,
         "Sandwich" :150 , 
         "Nachos And Cheese":350,
-        "Hot dog":150,
+        "Hot Dog":150,
         "Candy":60,
         "Mineral Water":50,
         "Coffee":100,
@@ -42,12 +42,9 @@ def select_item():
             prices=menu.get(item)
             value.append(prices)
             quantities.append(qty)
+            amount = prices * qty
+            amounts.append(amount)
 
-            index=0
-            for quantity in quantities:
-                amount=value[index] * quantity
-                index=index+1
-                amounts.append(amount)
 
     return orders,quantities,amounts,amount
 
@@ -59,8 +56,7 @@ def receipt(orders,quantities,amounts,amount):
     for ite,quantitie,amt in zip(orders,quantities,amounts): 
         print(f"{ite:<10} {quantitie:<10} {amt:>10}")
     print('-' * 37)
-    total=0
-    total+=amount
+    total = sum(amounts)
     print(f"{'TOTAL':<10} {total:>20}")
 
 def time_date():
