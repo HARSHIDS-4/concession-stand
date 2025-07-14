@@ -27,7 +27,7 @@ def select_item():
 
     while True:
         item=input("select an item(q to quit):")
-        item=item.capitalize()
+        item=item.title()
 
         if item=="q" or item=="Q": 
             break
