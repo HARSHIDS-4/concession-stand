@@ -1,7 +1,7 @@
 #concession stand program
 print("WELCOME TO THE CONCESSION STAND!!")
 print()
-print("-----------MENU-------------")
+print("-----------MENU📜-------------")
 menu={ "Popcorn":300 ,
         "Pizza":500 ,
         "Sandwich" :150 , 
@@ -26,7 +26,7 @@ def select_item():
     amounts=[]
 
     while True:
-        item=input("select an item(q to quit):")
+        item=input("select an item(q to quit)🍽:")
         item=item.title()
 
         if item=="q" or item=="Q": 
@@ -48,15 +48,33 @@ def select_item():
 
     return orders,quantities,amounts,amount
 
+def coupon():
+    coupon_ask=input("Do you have coupon?(yes or no)").lower()
+    if coupon_ask=="yes":
+        coupon_code=input("enter the coupon code:")
+        if coupon_code=="SS1967":
+            print("valid coupon you can avail discount of 10%😃")
+            return True
+        else:
+            print("invalid coupon code😔")
+            return False
 
-def receipt(orders,quantities,amounts,amount):
+    return coupon_code
+
+def receipt(orders,quantities,amounts,amount,has_coupon):
     print(f"{'item':<10} {'quantity':<10} {'price':>10}")
     print('-'*37)
 
     for ite,quantitie,amt in zip(orders,quantities,amounts): 
         print(f"{ite:<10} {quantitie:<10} {amt:>10}")
     print('-' * 37)
-    total = sum(amounts)
+    if has_coupon:
+        discount = sum(amounts) * 10/100
+        
+        total =sum(amounts) - discount
+        print(f"{'discount':<10} {'10%':<10} {discount:>10}")
+    else:
+        total=sum(amounts)
     print(f"{'TOTAL':<10} {total:>20}")
 
 def time_date():
@@ -70,8 +88,9 @@ def time_date():
 display_menu()
 print("----------------------------")  
 orders, quantities, amounts,amount = select_item()
+has_coupon = coupon()
 print()
 print("---------YOUR RECEIPT----------------")
-receipt(orders,quantities,amounts,amount) 
+receipt(orders,quantities,amounts,amount,has_coupon) 
 print("-------------------------------------")
 time_date()
