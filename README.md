@@ -40,30 +40,30 @@ Hot Chocolate         110
 Soda                  70      
 Smoothie              170     
 ----------------------------  
-select an item(q to quit)🍽: popcorn
-enter the quantity of Popcorn you want:2
-select an item(q to quit)🍽: hot dog
-enter the quantity of Hot Dog you want:2
-select an item(q to quit)🍽: nachos and cheese
-enter the quantity of Nachos And Cheese you want:1
-select an item(q to quit)🍽: mineral water
-enter the quantity of Mineral Water you want:1
-select an item(q to quit)🍽: soda
-enter the quantity of Soda you want:5
-select an item(q to quit)🍽: q
-Do you have coupon?(yes or no)yes
-enter the coupon code:ss224
-invalid coupon code😔
+select an item(q to quit)🍽: popcorn 
+enter the quantity of Popcorn you want:2 
+select an item(q to quit)🍽: hot dog 
+enter the quantity of Hot Dog you want:2 
+select an item(q to quit)🍽: nachos and cheese 
+enter the quantity of Nachos And Cheese you want:1 
+select an item(q to quit)🍽: mineral water 
+enter the quantity of Mineral Water you want:1 
+select an item(q to quit)🍽: soda 
+enter the quantity of Soda you want:5 
+select an item(q to quit)🍽: q 
+Do you have coupon?(yes or no)yes 
+enter the coupon code:ss224 
+invalid coupon code😔 
 
 --------------------------YOUR RECEIPT-------------------------------
 item                 quantity                            price       
------------------------------------------------------------------    
+---------------------------------------------------------------------    
 Popcorn              2                                     600       
 Hot Dog              2                                     300       
 Nachos And Cheese    1                                     350
 Mineral Water        1                                      50
 Soda                 5                                     350
------------------------------------------------------------------
+--------------------------------------------------------------------
 TOTAL                                1650
 ---------------------------------------------------------------------
 2025-07-31
