@@ -49,7 +49,7 @@ def select_item():
     return orders,quantities,amounts,amount
 
 def coupon():
-    coupon_ask=input("Do you have coupon?(yes or no)").lower()
+    coupon_ask=input("Do you have coupon?(yes or no)").strip().lower()
     if coupon_ask=="yes":
         coupon_code=input("enter the coupon code:")
         if coupon_code=="SS1967":
@@ -58,24 +58,24 @@ def coupon():
         else:
             print("invalid coupon code😔")
             return False
+    return False
+    
 
-    return coupon_code
-
-def receipt(orders,quantities,amounts,amount,has_coupon):
-    print(f"{'item':<10} {'quantity':<10} {'price':>10}")
-    print('-'*37)
+def receipt(orders,quantities,amounts,has_coupon):
+    print(f"{'item':<20} {'quantity':<20} {'price':>20}")
+    print('-'*65)
 
     for ite,quantitie,amt in zip(orders,quantities,amounts): 
-        print(f"{ite:<10} {quantitie:<10} {amt:>10}")
-    print('-' * 37)
+        print(f"{ite:<20} {quantitie:<20} {amt:>20}")
+    print('-' * 65)
     if has_coupon:
         discount = sum(amounts) * 10/100
         
         total =sum(amounts) - discount
-        print(f"{'discount':<10} {'10%':<10} {discount:>10}")
+        print(f"{'discount':<20} {'10%':<20} {discount:>20}")
     else:
         total=sum(amounts)
-    print(f"{'TOTAL':<10} {total:>20}")
+    print(f"{'TOTAL':<20} {total:>20}")
 
 def time_date():
     import datetime 
@@ -90,7 +90,7 @@ print("----------------------------")
 orders, quantities, amounts,amount = select_item()
 has_coupon = coupon()
 print()
-print("---------YOUR RECEIPT----------------")
-receipt(orders,quantities,amounts,amount,has_coupon) 
-print("-------------------------------------")
+print("--------------------------YOUR RECEIPT-------------------------------")
+receipt(orders,quantities,amounts,has_coupon) 
+print("---------------------------------------------------------------------")
 time_date()
