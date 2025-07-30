@@ -28,13 +28,13 @@ The idea is to simulate a digital **concession stand** — like the kind you’d
 
 1. Make sure you have Python installed on your system.
 2. Clone this repo:
-   git clone https://github.com/your-username/PYTHON_PROJECT.git.
+   git clone https://github.com/HARSHIDS-4/concession-stand.git
    
 3.Navigate into the folder:
-  cd PYTHON_PROJECT.
+  cd folder_name.
   
 4.Run the program:
-  python concession_stand_program.py.
+  python: concession_stand_program.py.
   
 You’ll be greeted with a welcome message and the menu. From there, just type in your order and let the program do the rest!
 
