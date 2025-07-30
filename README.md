@@ -25,7 +25,7 @@ The idea is to simulate a digital **concession stand** — like the kind you’d
 ---
 
 ## 🧾 Sample Output
-\\\
+```
 WELCOME TO THE CONCESSION STAND!!
 
 -----------MENU📜-------------
@@ -69,7 +69,7 @@ TOTAL                                1650
 ---------------------------------------------------------------------
 2025-07-31
 02:23:47.868945 
-\\\
+```
 
 ## ▶️ How to Run It
 
