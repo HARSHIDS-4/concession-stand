@@ -25,7 +25,7 @@ The idea is to simulate a digital **concession stand** — like the kind you’d
 ---
 
 ## 📦 Example Output
-- WELCOME TO THE CONCESSION STAND!!
+WELCOME TO THE CONCESSION STAND!!
 
 -----------MENU📜-------------
 Popcorn               300     
